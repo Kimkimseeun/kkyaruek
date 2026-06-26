@@ -808,3 +808,98 @@
 
   z-index: 3;
 }
+
+/* ========================================= */
+/* HERO 최종 정리본 */
+/* 프로필 / 캐릭터 / 현상금 위치 재정렬 */
+/* ========================================= */
+
+.nerine-hero {
+  position: relative;
+  width: 100%;
+  min-height: 520px;
+  margin: 40px 0 70px;
+}
+
+/* 프로필 종이 */
+.profile-note {
+  position: absolute;
+  left: 0;
+  top: 110px;
+
+  width: 165px;
+  min-height: 330px;
+
+  transform: rotate(-4deg);
+  z-index: 4;
+
+  font-size: 10px;
+}
+
+/* 프로필 안쪽 여백 */
+.profile-note .paper-content {
+  padding: 22px 18px;
+}
+
+.profile-note h2 {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+
+.profile-list {
+  font-size: 10px;
+  line-height: 1.35;
+}
+
+.profile-list div {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+/* 캐릭터 이미지 */
+.character-stand {
+  position: absolute;
+  right: -6px;
+  top: 40px;
+
+  width: 240px;
+  height: 420px;
+
+  overflow: hidden;
+  z-index: 3;
+
+  transform: rotate(-2deg);
+}
+
+.character-stand img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* 현상금 종이 */
+.bounty-slip {
+  position: absolute;
+  left: 116px;
+  top: 405px;
+
+  width: 245px;
+  min-height: 92px;
+
+  z-index: 4;
+
+  transform: rotate(1deg);
+}
+
+.bounty-slip .paper-content {
+  padding: 30px 28px;
+  font-size: 13px;
+}
+
+/* 나침반은 일단 숨김 */
+.compass-mark {
+  display: none;
+}
