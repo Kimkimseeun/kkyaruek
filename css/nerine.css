@@ -64,7 +64,7 @@
 .profile-note {
   position: absolute;
   left: 18px;
-  top: 90px;
+  top: 50px;
 
   width: 180px;
   min-height: 390px;
@@ -109,7 +109,7 @@
 .character-stand {
   position: absolute;
   right: 14px;
-  top:88px;
+  top:40px;
 
   width: 245px;
   height: 405px;
