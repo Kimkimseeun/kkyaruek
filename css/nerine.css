@@ -249,12 +249,62 @@
 
 
 /* ========================================= */
-/* 관계 */
+/* 인간관계 */
+/* 사진 + 설명 형태 */
 /* ========================================= */
 
-.relation-section .dark-photo-box {
-  height: 145px;
+.relation-card {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 14px;
+
+  margin-bottom: 22px;
+  padding: 14px;
+
+  background: #f0e6d0;
+  transform: rotate(-1deg);
 }
+
+.relation-card.reverse {
+  grid-template-columns: 1fr 88px;
+  transform: rotate(1deg);
+}
+
+.relation-card.reverse .relation-photo {
+  order: 2;
+}
+
+.relation-photo {
+  min-height: 120px;
+
+  border: 1px solid #25251b;
+  background: rgba(255, 255, 255, 0.35);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 10px;
+}
+
+.relation-text h3 {
+  display: inline-block;
+
+  margin: 0 0 8px;
+  padding: 3px 10px;
+
+  background: #d6c6a5;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.relation-text p {
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 1.7;
+}
+
 
 
 /* ========================================= */
@@ -350,4 +400,52 @@
 
   background: #b6a37f;
   border: 1px solid #25251b;
+}
+
+/* ========================================= */
+/* 항해일지 */
+/* 앞으로 article 복붙으로 계속 추가 가능 */
+/* ========================================= */
+
+.logbook-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.logbook-card {
+  padding: 16px;
+
+  background: #f0e6d0;
+  transform: rotate(-1deg);
+}
+
+.logbook-card:nth-child(even) {
+  transform: rotate(1deg);
+}
+
+.logbook-card h3 {
+  display: inline-block;
+
+  margin: 0 0 12px;
+  padding: 4px 12px;
+
+  background: #d6c6a5;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.logbook-image {
+  height: 135px;
+  margin-bottom: 12px;
+
+  background: #292918;
+  border: 1px solid #1c1c12;
+}
+
+.logbook-card p {
+  margin: 0;
+
+  font-size: 12px;
+  line-height: 1.8;
 }
