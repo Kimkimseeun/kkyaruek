@@ -744,41 +744,67 @@
 }
 
 
-/* hero 전체 높이 확보 */
-
-.nerine-hero {
-  min-height: 560px;
-}
-
-
 /* ========================================= */
-/* HERO 최종 정리본 */
-/* 프로필 / 캐릭터 / 현상금 위치 재정렬 */
+/* HERO 최종 고정본 */
+/* 이 아래 코드는 hero 배치를 최종 결정함 */
 /* ========================================= */
 
 .nerine-hero {
   position: relative;
   width: 100%;
-  min-height: 520px;
-  margin: 40px 0 70px;
+  max-width: 430px;
+  min-height: 560px;
+  margin: 40px auto 80px;
 }
 
 /* 프로필 종이 */
 .profile-note {
   position: absolute;
-  left: 0;
+  left: -4px;
   top: 110px;
 
-  width: 165px;
-  min-height: 330px;
+  width: 170px;
+  min-height: 350px;
 
   transform: rotate(-4deg);
   z-index: 4;
-
-  font-size: 10px;
 }
 
-/* 프로필 안쪽 여백 */
+/* 캐릭터 이미지 */
+.character-stand {
+  position: absolute;
+  right: -2px;
+  top: 70px;
+
+  width: 245px;
+  height: 420px;
+
+  overflow: hidden;
+  transform: rotate(-2deg);
+  z-index: 3;
+}
+
+.character-stand img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* 현상금 종이 */
+.bounty-slip {
+  position: absolute;
+  left: 105px;
+  top: 420px;
+
+  width: 265px;
+  min-height: 95px;
+
+  transform: rotate(1deg);
+  z-index: 5;
+}
+
+/* 프로필 내용 */
 .profile-note .paper-content {
   padding: 22px 18px;
 }
@@ -789,6 +815,7 @@
 }
 
 .profile-list {
+  margin: 0;
   font-size: 10px;
   line-height: 1.35;
 }
@@ -800,27 +827,10 @@
   margin-bottom: 4px;
 }
 
-
-/* 현상금 종이 */
-.bounty-slip {
-  position: absolute;
-  left: 116px;
-  top: 405px;
-
-  width: 245px;
-  min-height: 92px;
-
-  z-index: 4;
-
-  transform: rotate(1deg);
+.profile-list dt {
+  font-weight: bold;
 }
 
-.bounty-slip .paper-content {
-  padding: 30px 28px;
-  font-size: 13px;
-}
-
-/* 나침반은 일단 숨김 */
-.compass-mark {
-  display: none;
+.profile-list dd {
+  margin: 0;
 }
