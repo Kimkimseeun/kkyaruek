@@ -85,7 +85,7 @@
 
 .profile-list {
   margin: 0;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.35;
 }
 
@@ -101,8 +101,8 @@
 /* 네리네 사진 */
 .character-stand {
   position: absolute;
-  right: 4px;
-  top: 40px;
+  right: 3px;
+  top: 30px;
 
   width: 245px;
   height: 410px;
@@ -127,8 +127,8 @@
 /* 현상금 종이 */
 .bounty-slip {
   position: absolute;
-  left: 96px;
-  top: 425px;
+  left: 80px;
+  top: 400px;
 
   width: 285px;
   min-height: 96px;
