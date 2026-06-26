@@ -952,3 +952,66 @@
 .bounty-slip .paper-content {
   padding: 30px 38px !important;
 }
+
+/* ========================================= */
+/* HERO 배치 수정 3 */
+/* 네리네: 잘리지 않게 / 맨 뒤 / 프로필보다 위 / 반대 각도 */
+/* ========================================= */
+
+.nerine-hero {
+  position: relative !important;
+  width: 100% !important;
+  max-width: 430px !important;
+  min-height: 610px !important;
+  margin: 0 auto 80px !important;
+  overflow: visible !important;
+}
+
+/* 프로필 표 */
+.profile-note {
+  left: 12px !important;
+  top: 82px !important;
+
+  width: 185px !important;
+  min-height: 390px !important;
+
+  transform: rotate(-4deg) !important;
+  z-index: 6 !important;
+}
+
+/* 네리네 사진 박스 */
+.character-stand {
+  left: 150px !important;
+  top: 42px !important;
+
+  width: 255px !important;
+  height: 455px !important;
+
+  transform: rotate(3deg) !important;
+  overflow: visible !important;
+
+  z-index: 2 !important;
+}
+
+/* 네리네 이미지 자체 */
+.character-stand img {
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: contain !important;
+  object-position: center top !important;
+
+  display: block !important;
+}
+
+/* 현상금 종이 */
+.bounty-slip {
+  left: 96px !important;
+  top: 430px !important;
+
+  width: 300px !important;
+  min-height: 100px !important;
+
+  transform: rotate(1deg) !important;
+  z-index: 8 !important;
+}
