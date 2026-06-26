@@ -56,26 +56,25 @@
 
 .nerine-hero {
   position: relative;
-  height: 560px;
+  height: 540px;
   margin: 0 0 72px;
 }
 
 /* 프로필 표: CSS 종이 */
 .profile-note {
   position: absolute;
-  left: 5px;
-  top: 80px;
+  left: 4px;
+  top: 70px;
 
-  width: 160px;
-  min-height: 300px;
+  width: 185px;
+  min-height: 390px;
   padding: 24px 18px;
 
   background: #d6c6a5;
   border: 1px solid rgba(37, 37, 27, 0.65);
   box-shadow: 4px 4px 0 rgba(37, 37, 27, 0.18);
 
-  transform: rotate(-1.8deg);
-  /* -3~-4 말고 -2 */
+  transform: rotate(-2deg);
   z-index: 5;
 }
 
@@ -91,7 +90,7 @@
 }
 
 .profile-list p {
-  margin: 6px 0;
+  margin: 5px 0;
 }
 
 .profile-list strong {
@@ -101,11 +100,11 @@
 /* 네리네 사진 */
 .character-stand {
   position: absolute;
-  right: 5px;
+  right: 4px;
   top: 40px;
 
   width: 245px;
-  height: 405px;
+  height: 410px;
 
   background: #fff;
   border: 1px dashed #25251b;
@@ -127,12 +126,12 @@
 /* 현상금 종이 */
 .bounty-slip {
   position: absolute;
-  left: 100px;
+  left: 96px;
   top: 425px;
 
-  width: 245px;
-  min-height: 82px;
-  padding: 30px 34px;
+  width: 285px;
+  min-height: 96px;
+  padding: 28px 34px;
 
   background: #d6c6a5;
   border: 1px solid rgba(37, 37, 27, 0.65);
