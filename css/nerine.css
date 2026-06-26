@@ -480,3 +480,54 @@
 .footnote:focus-within .footnote-popup {
   display: block;
 }
+
+/* ========================================= */
+/* 수정: 프로필 박스 가로 확장 */
+/* ========================================= */
+
+.profile-note {
+  width: 170px;
+  min-height: 250px;
+  z-index: 2;
+}
+
+.character-stand {
+  right: 0;
+  width: 175px;
+  z-index: 1;
+}
+
+.bounty-slip {
+  z-index: 3;
+}
+
+
+/* ========================================= */
+/* 수정: 줄바꿈 적용 */
+/* HTML에서 줄바꿈한 그대로 화면에 보이게 함 */
+/* ========================================= */
+
+.page-section p,
+.logbook-card p,
+.relation-text p {
+  white-space: pre-line;
+}
+
+
+/* ========================================= */
+/* 수정: 각주 */
+/* 윗첨자 + 밑줄 제거 */
+/* ========================================= */
+
+.footnote {
+  position: relative;
+  cursor: pointer;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+.footnote-number {
+  vertical-align: super;
+  font-size: 0.7em;
+  line-height: 0;
+}
