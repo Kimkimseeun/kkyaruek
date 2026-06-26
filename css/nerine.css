@@ -882,3 +882,73 @@
   padding: 30px 34px !important;
   font-size: 13px !important;
 }
+
+/* ========================================= */
+/* HERO 배치 수정 2 */
+/* 타이틀 가까이 / 프로필 위 / 네리네 크게 / 현상금 중앙 */
+/* ========================================= */
+
+/* 타이틀 아래 여백 줄이기 */
+.nerine-title-area {
+  margin-top: 28px !important;
+  margin-bottom: 28px !important;
+}
+
+/* hero 자체를 위로 붙이고 높이 확보 */
+.nerine-hero {
+  position: relative !important;
+  width: 100% !important;
+  min-height: 590px !important;
+  margin: 0 auto 80px !important;
+  overflow: visible !important;
+}
+
+/* 프로필: 더 위로 */
+.profile-note {
+  left: 10px !important;
+  top: 40px !important;
+
+  width: 185px !important;
+  min-height: 390px !important;
+
+  transform: rotate(-4deg) !important;
+  z-index: 6 !important;
+}
+
+/* 네리네 사진 박스: 더 크고 오른쪽 */
+.character-stand {
+  left: 160px !important;
+  top: 70px !important;
+
+  width: 270px !important;
+  height: 460px !important;
+
+  transform: rotate(1.5deg) !important;
+  overflow: hidden !important;
+  z-index: 4 !important;
+}
+
+/* 네리네 이미지 안쪽 확대 */
+.character-stand img {
+  width: 118% !important;
+  height: 118% !important;
+
+  object-fit: cover !important;
+  object-position: center top !important;
+}
+
+/* 현상금: 사이트 중앙 쪽으로 */
+.bounty-slip {
+  left: 86px !important;
+  top: 445px !important;
+
+  width: 310px !important;
+  min-height: 100px !important;
+
+  transform: rotate(1deg) !important;
+  z-index: 8 !important;
+}
+
+.bounty-slip .paper-content {
+  padding: 30px 38px !important;
+}
