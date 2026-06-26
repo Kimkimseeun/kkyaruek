@@ -449,3 +449,34 @@
   font-size: 12px;
   line-height: 1.8;
 }
+
+/* 각주 팝업 */
+
+.footnote {
+  position: relative;
+  cursor: pointer;
+  border-bottom: 1px dotted #25251b;
+}
+
+.footnote-popup {
+  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 130%;
+  z-index: 1000;
+
+  width: 220px;
+  padding: 12px;
+
+  background: #f3ead7;
+  border: 1px solid #25251b;
+  box-shadow: 3px 3px 0 rgba(37, 37, 27, 0.2);
+
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.footnote:hover .footnote-popup,
+.footnote:focus-within .footnote-popup {
+  display: block;
+}
