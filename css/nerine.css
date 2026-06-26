@@ -794,10 +794,6 @@
 /* 요소들이 흩어지지 않게 한 덩어리로 모으기 */
 /* ========================================= */
 
-.nerine-page {
-  max-width: 430px;
-  overflow-x: hidden;
-}
 
 .nerine-hero {
   position: relative;
@@ -855,4 +851,99 @@
 
 .bounty-slip .paper-content {
   padding: 25px 28px !important;
+}
+
+/* ========================================= */
+/* HERO 모바일 최종 배치 */
+/* 오른쪽 예시처럼: 프로필 왼쪽 / 네리네 오른쪽 / 현상금 아래 */
+/* ========================================= */
+
+.nerine-page {
+  max-width: 430px !important;
+  margin: 0 auto !important;
+  overflow-x: hidden !important;
+}
+
+.nerine-hero {
+  position: relative !important;
+  width: 100% !important;
+  min-height: 610px !important;
+  margin: 34px auto 86px !important;
+  overflow: visible !important;
+}
+
+/* 프로필 표: 화면 안에서 절대 안 잘리게 */
+.profile-note {
+  position: absolute !important;
+  left: 12px !important;
+  top: 110px !important;
+
+  width: 185px !important;
+  min-height: 390px !important;
+
+  transform: rotate(-4deg) !important;
+  z-index: 6 !important;
+}
+
+/* 프로필 내용 */
+.profile-note .paper-content {
+  padding: 24px 18px !important;
+}
+
+.profile-note h2 {
+  margin: 0 0 12px !important;
+  font-size: 15px !important;
+}
+
+.profile-list {
+  font-size: 11px !important;
+  line-height: 1.38 !important;
+}
+
+.profile-list div {
+  display: grid !important;
+  grid-template-columns: 58px 1fr !important;
+  gap: 5px !important;
+  margin-bottom: 5px !important;
+}
+
+/* 네리네 사진: 오른쪽, 화면 안에 들어오게 */
+.character-stand {
+  position: absolute !important;
+  left: 165px !important;
+  top: 80px !important;
+
+  width: 245px !important;
+  height: 430px !important;
+
+  overflow: hidden !important;
+  transform: rotate(1.5deg) !important;
+  z-index: 4 !important;
+}
+
+/* 사진 자체는 박스 안에서 크게 */
+.character-stand img {
+  width: 112% !important;
+  height: 112% !important;
+
+  object-fit: cover !important;
+  object-position: center top !important;
+}
+
+/* 현상금 종이: 두 요소 위에 자연스럽게 겹치기 */
+.bounty-slip {
+  position: absolute !important;
+  left: 112px !important;
+  top: 440px !important;
+
+  width: 285px !important;
+  min-height: 100px !important;
+
+  transform: rotate(1deg) !important;
+  z-index: 8 !important;
+}
+
+.bounty-slip .paper-content {
+  padding: 30px 34px !important;
+  font-size: 13px !important;
 }
