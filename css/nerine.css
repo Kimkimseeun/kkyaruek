@@ -3,6 +3,7 @@
 /* ========================================= */
 
 .nerine-body {
+  margin: 0;
   background: #e8ddc6;
   color: #25251b;
   font-family: Georgia, "Times New Roman", serif;
@@ -11,167 +12,87 @@
 .nerine-page {
   width: 100%;
   max-width: 430px;
-  min-height: 100vh;
   margin: 0 auto;
-  padding: 18px 20px 90px;
-  background: #e8ddc6;
+  padding: 22px 20px 90px;
   overflow-x: hidden;
 }
 
 
 /* ========================================= */
-/* 01. 타이틀 */
+/* 타이틀 */
 /* ========================================= */
 
 .nerine-title-area {
-  margin-top: 30px;
-  margin-bottom: 26px;
+  margin: 32px 0 28px;
 }
 
 .small-label {
-  margin: 0 0 6px;
-  font-size: 10px;
-  letter-spacing: 0.12em;
+  margin: 0 0 4px;
+  font-size: 11px;
+  letter-spacing: 0.1em;
 }
 
 .nerine-logo {
   margin: 0;
-  font-size: 42px;
+  font-size: 46px;
   line-height: 0.9;
   letter-spacing: -0.06em;
-  transform: rotate(-5deg);
+  transform: rotate(-4deg);
   transform-origin: left center;
   text-decoration: underline;
   text-decoration-thickness: 2px;
 }
 
 .nerine-subtitle {
-  margin: 6px 0 0 8px;
-  font-size: 12px;
+  margin: 8px 0 0 10px;
+  font-size: 14px;
   font-style: italic;
 }
 
 
 /* ========================================= */
-/* 02. 메인 Hero */
+/* HERO */
 /* ========================================= */
 
 .nerine-hero {
   position: relative;
-  width: 100%;
-  height: 590px;
-  margin: 0 auto 78px;
-  overflow: visible;
+  height: 560px;
+  margin: 0 0 72px;
 }
 
-/* 프로필 표 */
+/* 프로필 표: CSS 종이 */
 .profile-note {
-  left: -8px;
-  top: 92px;
+  position: absolute;
+  left: 0;
+  top: 70px;
 
-  width: 195px;
-  min-height: 410px;
+  width: 190px;
+  min-height: 390px;
+  padding: 24px 18px;
 
-  transform: rotate(-3deg);
-  z-index: 6;
-}
-
-/* 네리네 사진: 프로필보다 뒤 */
-.character-stand {
-  left: 150px;
-  top: 54px;
-
-  width: 248px;
-  height: 438px;
-
-  transform: rotate(1.5deg);
-  overflow: hidden;
-  z-index: 2;
-}
-
-.character-stand img {
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-  object-position: center top;
-}
-
-/* 현상금 종이: 가운데 걸침 */
-.bounty-slip {
-  left: 88px;
-  top: 438px;
-
-  width: 292px;
-  min-height: 100px;
-
-  transform: rotate(0.8deg);
-  z-index: 8;
-}
-
-.bounty-slip .paper-content {
-  padding: 32px 36px;
-}
-
-
-/* ========================================= */
-/* 종이 PNG 적용 */
-/* ========================================= */
-
-.paper {
   background: #d6c6a5;
   border: 1px solid rgba(37, 37, 27, 0.65);
-  box-shadow: 3px 3px 0 rgba(37, 37, 27, 0.18);
+  box-shadow: 4px 4px 0 rgba(37, 37, 27, 0.18);
+
+  transform: rotate(-3deg);
+  z-index: 5;
 }
-
-.paper-img {
-  position: relative;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-}
-
-.paper-decoration {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.paper-content {
-  position: relative;
-  z-index: 1;
-  padding: 24px 18px;
-}
-
-.bounty-slip .paper-content {
-  padding: 32px 38px;
-  font-size: 13px;
-}
-
-
-/* ========================================= */
-/* 프로필 내용 */
-/* ========================================= */
 
 .profile-note h2 {
-  margin: 0 0 12px;
-  font-size: 15px;
+  margin: 0 0 14px;
+  font-size: 18px;
 }
 
 .profile-list {
   margin: 0;
-  font-size: 11px;
-  line-height: 1.38;
+  font-size: 12px;
+  line-height: 1.45;
 }
 
 .profile-list div {
   display: grid;
-  grid-template-columns: 58px 1fr;
-  gap: 5px;
+  grid-template-columns: 64px 1fr;
+  gap: 6px;
   margin-bottom: 5px;
 }
 
@@ -183,38 +104,84 @@
   margin: 0;
 }
 
+/* 네리네 사진 */
+.character-stand {
+  position: absolute;
+  right: 0;
+  top: 42px;
+
+  width: 250px;
+  height: 430px;
+
+  background: #fff;
+  border: 1px dashed #25251b;
+
+  overflow: hidden;
+  transform: rotate(2deg);
+  z-index: 2;
+}
+
+.character-stand img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+/* 현상금 종이 */
+.bounty-slip {
+  position: absolute;
+  left: 105px;
+  top: 410px;
+
+  width: 285px;
+  min-height: 105px;
+  padding: 30px 34px;
+
+  background: #d6c6a5;
+  border: 1px solid rgba(37, 37, 27, 0.65);
+  box-shadow: 4px 4px 0 rgba(37, 37, 27, 0.18);
+
+  transform: rotate(1deg);
+  z-index: 8;
+
+  font-size: 15px;
+}
+
 
 /* ========================================= */
 /* 공통 섹션 */
 /* ========================================= */
 
 .page-section {
-  position: relative;
   margin: 58px 0;
 }
 
 .section-label {
   display: inline-block;
   margin: 0 0 12px;
-  padding: 4px 12px;
+  padding: 4px 14px;
+
   background: #f3ead7;
   border: 1px dashed #25251b;
-  font-size: 14px;
+
+  font-size: 15px;
   font-weight: normal;
   transform: rotate(-2deg);
 }
 
 .dark-photo-box {
   width: 100%;
-  height: 130px;
+  height: 150px;
   background: #292918;
   border: 1px solid #1c1c12;
 }
 
 .page-section p {
-  margin: 12px 0 0;
-  font-size: 12px;
-  line-height: 1.8;
+  margin: 18px 0 0;
+  font-size: 13px;
+  line-height: 1.9;
   white-space: pre-line;
 }
 
@@ -238,16 +205,21 @@
 
 .relation-card {
   display: grid;
-  grid-template-columns: 88px 1fr;
+  grid-template-columns: 92px 1fr;
   gap: 14px;
+
   margin-bottom: 22px;
   padding: 14px;
+
   background: #f0e6d0;
+  border: 1px solid rgba(37, 37, 27, 0.65);
+  box-shadow: 3px 3px 0 rgba(37, 37, 27, 0.18);
+
   transform: rotate(-1deg);
 }
 
 .relation-card.reverse {
-  grid-template-columns: 1fr 88px;
+  grid-template-columns: 1fr 92px;
   transform: rotate(1deg);
 }
 
@@ -259,9 +231,11 @@
   min-height: 120px;
   border: 1px solid #25251b;
   background: rgba(255, 255, 255, 0.35);
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   font-size: 10px;
 }
 
@@ -295,6 +269,8 @@
 .logbook-card {
   padding: 16px;
   background: #f0e6d0;
+  border: 1px solid rgba(37, 37, 27, 0.65);
+  box-shadow: 3px 3px 0 rgba(37, 37, 27, 0.18);
   transform: rotate(-1deg);
 }
 
@@ -334,8 +310,8 @@
   position: relative;
   display: inline-block;
   cursor: pointer;
-  text-decoration: none;
   border-bottom: none;
+  text-decoration: none;
 }
 
 .footnote-number,
@@ -352,13 +328,16 @@
   left: 24px;
   right: 24px;
   bottom: 80px;
+
   width: auto;
   max-width: 380px;
   margin: 0 auto;
   padding: 12px;
+
   background: #f3ead7;
   border: 1px solid #25251b;
   box-shadow: 3px 3px 0 rgba(37, 37, 27, 0.2);
+
   font-size: 12px;
   line-height: 1.6;
   z-index: 9999;
@@ -367,36 +346,4 @@
 .footnote:hover .footnote-popup,
 .footnote:focus-within .footnote-popup {
   display: block;
-}
-
-
-/* ========================================= */
-/* 기타 */
-/* ========================================= */
-
-.gallery-section .dark-photo-box {
-  height: 150px;
-}
-
-.small-items {
-  margin-top: 20px;
-  display: flex;
-  align-items: flex-end;
-  gap: 14px;
-}
-
-.small-items span {
-  display: block;
-  width: 50px;
-  height: 14px;
-  background: #b6a37f;
-  border: 1px solid #25251b;
-  border-radius: 50%;
-}
-
-.small-items div {
-  width: 92px;
-  height: 80px;
-  background: #b6a37f;
-  border: 1px solid #25251b;
 }
