@@ -573,3 +573,69 @@
   line-height: 0;
   text-decoration: none;
 }
+
+/* ========================================= */
+/* 수정: 각주 팝업이 화면 밖으로 나가지 않게 */
+/* ========================================= */
+
+.footnote {
+  position: relative;
+  display: inline-block;
+}
+
+.footnote-popup {
+  position: fixed;
+  left: 24px;
+  right: 24px;
+  bottom: 80px;
+
+  width: auto;
+  max-width: 380px;
+  margin: 0 auto;
+
+  z-index: 9999;
+}
+
+
+/* ========================================= */
+/* 수정: 프로필 글자 크기 축소 */
+/* ========================================= */
+
+.profile-note {
+  width: 165px;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.profile-note h2 {
+  font-size: 15px;
+}
+
+.profile-list {
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.profile-list div {
+  grid-template-columns: 54px 1fr;
+  gap: 4px;
+}
+
+
+/* ========================================= */
+/* 수정: 네리네 이미지 크게 */
+/* ========================================= */
+
+.character-stand {
+  right: -4px;
+  width: 230px;
+  height: 380px;
+  overflow: hidden;
+}
+
+.character-stand img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
