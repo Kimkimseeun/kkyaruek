@@ -63,7 +63,7 @@
 /* 프로필 표: CSS 종이 */
 .profile-note {
   position: absolute;
-  left: 18px;
+  left: 10px;
   top: 80px;
 
   width: 180px;
@@ -108,7 +108,7 @@
 /* 네리네 사진 */
 .character-stand {
   position: absolute;
-  right: 14px;
+  right: 10px;
   top:40px;
 
   width: 245px;
