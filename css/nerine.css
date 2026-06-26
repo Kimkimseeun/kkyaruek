@@ -64,10 +64,10 @@
 .profile-note {
   position: absolute;
   left: 18px;
-  top: 50px;
+  top: 80px;
 
   width: 180px;
-  min-height: 390px;
+  min-height: 340px;
   padding: 24px 18px;
 
   background: #d6c6a5;
