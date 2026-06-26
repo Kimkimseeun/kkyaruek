@@ -788,3 +788,71 @@
 .bounty-slip .paper-content {
   padding: 26px 30px;
 }
+
+/* ========================================= */
+/* HERO 압축 배치 */
+/* 요소들이 흩어지지 않게 한 덩어리로 모으기 */
+/* ========================================= */
+
+.nerine-page {
+  max-width: 430px;
+  overflow-x: hidden;
+}
+
+.nerine-hero {
+  position: relative;
+  width: 100%;
+  min-height: 560px;
+  margin: 30px auto 60px;
+  overflow: hidden;
+}
+
+/* 프로필: 네리네 쪽으로 더 붙임 */
+.profile-note {
+  left: 4px !important;
+  top: 100px !important;
+
+  width: 175px !important;
+  min-height: 350px !important;
+
+  transform: rotate(-4deg) !important;
+  z-index: 5 !important;
+}
+
+/* 네리네 사진: 페이지 안쪽으로 넣고 더 크게 */
+.character-stand {
+  left: 145px !important;
+  top: 120px !important;
+
+  width: 275px !important;
+  height: 430px !important;
+
+  transform: rotate(3deg) !important;
+  z-index: 4 !important;
+
+  overflow: hidden !important;
+}
+
+.character-stand img {
+  width: 112% !important;
+  height: 112% !important;
+
+  object-fit: cover !important;
+  object-position: center top !important;
+}
+
+/* 현상금: 사진 아래쪽에 겹치게 */
+.bounty-slip {
+  left: 135px !important;
+  top: 430px !important;
+
+  width: 245px !important;
+  min-height: 88px !important;
+
+  transform: rotate(-1deg) !important;
+  z-index: 7 !important;
+}
+
+.bounty-slip .paper-content {
+  padding: 25px 28px !important;
+}
