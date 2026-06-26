@@ -66,7 +66,7 @@
 .nerine-hero {
   position: relative;
 
-  min-height: 420px;
+  min-height: 520px;
   margin-bottom: 44px;
 }
 
@@ -149,7 +149,7 @@
 .bounty-slip {
   position: absolute;
   left: 75px;
-  top: 315px;
+  top: 390px;
 
   width: 235px;
   min-height: 78px;
@@ -530,4 +530,46 @@
   vertical-align: super;
   font-size: 0.7em;
   line-height: 0;
+}
+
+/* ========================================= */
+/* 프로필 리스트 */
+/* ========================================= */
+
+.profile-list {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.profile-list div {
+  display: grid;
+  grid-template-columns: 62px 1fr;
+  gap: 6px;
+}
+
+.profile-list dt {
+  font-weight: bold;
+}
+
+.profile-list dd {
+  margin: 0;
+}
+
+/* ========================================= */
+/* 수정: 각주 */
+/* 공백제거 */
+/* ========================================= */
+
+.footnote {
+  position: relative;
+  display: inline;
+  cursor: pointer;
+}
+
+.footnote sup {
+  font-size: 0.65em;
+  vertical-align: super;
+  line-height: 0;
+  text-decoration: none;
 }
