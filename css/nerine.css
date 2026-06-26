@@ -639,3 +639,113 @@
   object-fit: cover;
   object-position: center top;
 }
+
+/* ========================================= */
+/* 직접 그린 종이 PNG 적용 */
+/* ========================================= */
+
+.paper {
+  position: relative;
+  overflow: visible;
+
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.paper-decoration {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: fill;
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+.paper-content {
+  position: relative;
+  z-index: 1;
+
+  padding: 22px;
+}
+
+
+/* 작은 종이: PROFILE, BOUNTY RECORD */
+
+.paper-small {
+  width: 185px;
+  min-height: 360px;
+}
+
+
+/* 프로필 글자 조정 */
+
+.profile-note {
+  width: 185px;
+  min-height: 360px;
+  font-size: 11px;
+}
+
+.profile-note h2 {
+  margin: 0 0 12px;
+  font-size: 16px;
+}
+
+.profile-list {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.profile-list div {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 5px;
+
+  margin-bottom: 4px;
+}
+
+.profile-list dt {
+  font-weight: bold;
+}
+
+.profile-list dd {
+  margin: 0;
+}
+
+
+/* 현상금 종이는 프로필을 너무 가리지 않게 아래로 */
+
+.bounty-slip {
+  top: 410px;
+  width: 250px;
+  min-height: 95px;
+}
+
+
+/* 네리네 이미지 크게 */
+
+.character-stand {
+  right: -8px;
+  width: 240px;
+  height: 410px;
+  overflow: hidden;
+}
+
+.character-stand img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+
+/* hero 전체 높이 확보 */
+
+.nerine-hero {
+  min-height: 560px;
+}
