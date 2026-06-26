@@ -85,7 +85,7 @@
 
 .profile-list {
   margin: 0;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.4;
 }
 
@@ -94,7 +94,8 @@
 }
 
 .profile-list strong {
-  font-weight: 700;
+  font-weight: 900;
+  -webkit-text-stroke: 0.2px #25251b;
 }
 
 /* 네리네 사진 */
