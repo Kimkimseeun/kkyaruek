@@ -63,63 +63,6 @@
 /* 02. 메인 캐릭터 영역 */
 /* ========================================= */
 
-.nerine-hero {
-  position: relative;
-
-  min-height: 520px;
-  margin-bottom: 44px;
-}
-
-
-/* 왼쪽 프로필 종이 */
-
-.profile-note {
-  position: absolute;
-  left: 0;
-  top: 72px;
-
-  width: 150px;
-  min-height: 170px;
-
-  padding: 12px;
-
-  transform: rotate(-3deg);
-}
-
-.profile-note h2 {
-  margin: 0 0 8px;
-  font-size: 13px;
-}
-
-.profile-note ul {
-  margin: 0;
-  padding-left: 16px;
-
-  font-size: 11px;
-  line-height: 1.65;
-}
-
-
-/* 캐릭터 이미지 자리 */
-
-.character-stand {
-  position: absolute;
-  right: 8px;
-  top: 22px;
-
-  width: 190px;
-  height: 300px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border: 1px dashed #25251b;
-
-  font-size: 12px;
-  text-align: center;
-}
-
 
 /* 나침반 장식 자리 */
 
@@ -141,24 +84,6 @@
   font-size: 28px;
 
   transform: rotate(-18deg);
-}
-
-
-/* 현상금 종이 */
-
-.bounty-slip {
-  position: absolute;
-  left: 75px;
-  top: 390px;
-
-  width: 235px;
-  min-height: 78px;
-
-  padding: 16px;
-
-  transform: rotate(1.5deg);
-
-  font-size: 12px;
 }
 
 
@@ -481,26 +406,6 @@
   display: block;
 }
 
-/* ========================================= */
-/* 수정: 프로필 박스 가로 확장 */
-/* ========================================= */
-
-.profile-note {
-  width: 170px;
-  min-height: 250px;
-  z-index: 2;
-}
-
-.character-stand {
-  right: 0;
-  width: 175px;
-  z-index: 1;
-}
-
-.bounty-slip {
-  z-index: 3;
-}
-
 
 /* ========================================= */
 /* 수정: 줄바꿈 적용 */
@@ -623,24 +528,6 @@
 
 
 /* ========================================= */
-/* 수정: 네리네 이미지 크게 */
-/* ========================================= */
-
-.character-stand {
-  right: -4px;
-  width: 230px;
-  height: 380px;
-  overflow: hidden;
-}
-
-.character-stand img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-}
-
-/* ========================================= */
 /* 직접 그린 종이 PNG 적용 */
 /* ========================================= */
 
@@ -730,55 +617,11 @@
 /* 네리네 이미지 크게 */
 
 .character-stand {
-  right: -8px;
-  width: 240px;
-  height: 410px;
-  overflow: hidden;
-}
-
-.character-stand img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-}
-
-
-/* ========================================= */
-/* HERO 최종 고정본 */
-/* 이 아래 코드는 hero 배치를 최종 결정함 */
-/* ========================================= */
-
-.nerine-hero {
-  position: relative;
-  width: 100%;
-  max-width: 430px;
-  min-height: 560px;
-  margin: 40px auto 80px;
-}
-
-/* 프로필 종이 */
-.profile-note {
   position: absolute;
-  left: -4px;
-  top: 110px;
-
-  width: 170px;
-  min-height: 350px;
-
-  transform: rotate(-4deg);
-  z-index: 4;
-}
-
-/* 캐릭터 이미지 */
-.character-stand {
-  position: absolute;
-  right: -2px;
-  top: 70px;
-
-  width: 245px;
-  height: 420px;
-
+  left: 330px;
+  top: 90px;
+  width: 320px;
+  height: 470px;
   overflow: hidden;
   transform: rotate(-2deg);
   z-index: 3;
@@ -791,18 +634,6 @@
   object-position: center top;
 }
 
-/* 현상금 종이 */
-.bounty-slip {
-  position: absolute;
-  left: 105px;
-  top: 420px;
-
-  width: 265px;
-  min-height: 95px;
-
-  transform: rotate(1deg);
-  z-index: 5;
-}
 
 /* 프로필 내용 */
 .profile-note .paper-content {
@@ -840,12 +671,12 @@
 /* 프로필 왼쪽 / 네리네 오른쪽 / 현상금 아래 */
 /* ========================================= */
 
-.nerine-hero {
-  position: relative !important;
-  width: 100% !important;
-  max-width: 430px !important;
-  min-height: 620px !important;
-  margin: 40px auto 80px !important;
+.nerine-hero{
+    position:relative;
+    width:100%;
+    max-width:760px;
+    min-height:620px;
+    margin:40px auto 80px;
 }
 
 /* 프로필을 왼쪽 위로 빼기 */
@@ -862,17 +693,20 @@
 }
 
 /* 네리네를 오른쪽으로 밀기 */
-.character-stand {
-  position: absolute !important;
-  left: 165px !important;
-  top: 75px !important;
+.character-stand{
+    position:absolute;
 
-  width: 255px !important;
-  height: 445px !important;
+    left:330px;
+    top:90px;
 
-  overflow: hidden !important;
-  z-index: 3 !important;
-  transform: rotate(-2deg) !important;
+    width:320px;
+    height:470px;
+
+    overflow:hidden;
+
+    transform:rotate(-2deg);
+
+    z-index:3;
 }
 
 /* 네리네 이미지 */
