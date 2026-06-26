@@ -63,18 +63,19 @@
 /* 프로필 표: CSS 종이 */
 .profile-note {
   position: absolute;
-  left: 0;
-  top: 70px;
+  left: 18px;
+  top: 118px;
 
-  width: 190px;
-  min-height: 390px;
+  width: 180px;
+  min-height: 395px;
   padding: 24px 18px;
 
   background: #d6c6a5;
   border: 1px solid rgba(37, 37, 27, 0.65);
   box-shadow: 4px 4px 0 rgba(37, 37, 27, 0.18);
 
-  transform: rotate(-3deg);
+  transform: rotate(-2deg);
+  /* -3~-4 말고 -2 */
   z-index: 5;
 }
 
@@ -107,17 +108,18 @@
 /* 네리네 사진 */
 .character-stand {
   position: absolute;
-  right: 0;
-  top: 42px;
+  right: 14px;
+  top:450px;
 
-  width: 250px;
-  height: 430px;
+  width: 245px;
+  height: 405px;
 
   background: #fff;
   border: 1px dashed #25251b;
 
   overflow: hidden;
-  transform: rotate(2deg);
+  transform: rotate(0deg);
+  /* ★ 회전 제거 */
   z-index: 2;
 }
 
@@ -132,19 +134,19 @@
 /* 현상금 종이 */
 .bounty-slip {
   position: absolute;
-  left: 105px;
-  top: 410px;
+  left: 118px;
+  top: 432px;
 
-  width: 285px;
-  min-height: 105px;
+  width: 245px;
+  min-height: 82px;
   padding: 30px 34px;
 
   background: #d6c6a5;
   border: 1px solid rgba(37, 37, 27, 0.65);
   box-shadow: 4px 4px 0 rgba(37, 37, 27, 0.18);
 
-  transform: rotate(1deg);
-  z-index: 8;
+  transform: rotate(1deg);   /* 거의 안 기울임 */
+  z-index:7;
 
   font-size: 15px;
 }
