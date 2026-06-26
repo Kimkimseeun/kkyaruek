@@ -692,22 +692,6 @@
   transform: rotate(-4deg) !important;
 }
 
-/* 네리네를 오른쪽으로 밀기 */
-.character-stand{
-    position:absolute;
-
-    left:330px;
-    top:90px;
-
-    width:320px;
-    height:470px;
-
-    overflow:hidden;
-
-    transform:rotate(-2deg);
-
-    z-index:3;
-}
 
 /* 네리네 이미지 */
 .character-stand img {
@@ -1014,4 +998,78 @@
 
   transform: rotate(1deg) !important;
   z-index: 8 !important;
+}
+
+/* ========================= */
+/* 모바일 Hero 최종 배치 */
+/* ========================= */
+
+.nerine-hero{
+    position:relative;
+    width:100%;
+    max-width:430px;
+    height:620px;
+    margin:20px auto 60px;
+    overflow:hidden;   /* 네리네가 페이지 밖으로 안 튀어나감 */
+}
+
+
+/* 제목 */
+.nerine-title{
+    margin-top:20px !important;
+    margin-bottom:8px !important;
+}
+
+
+/* 프로필 */
+.profile-note{
+    position:absolute;
+    left:10px;
+    top:85px;
+
+    width:185px;
+
+    transform:rotate(-4deg);
+
+    z-index:5;
+}
+
+
+/* 네리네 사진 */
+.character-stand{
+    position:absolute;
+
+    left:150px;
+    top:40px;
+
+    width:250px;
+    height:430px;
+
+    transform:rotate(5deg);
+
+    overflow:visible;
+
+    z-index:1;          /* ← 프로필보다 뒤 */
+}
+
+.character-stand img{
+    width:100%;
+    height:100%;
+
+    object-fit:contain;
+}
+
+
+/* 현상금 */
+.bounty-slip{
+    position:absolute;
+
+    left:95px;          /* 거의 가운데 */
+    top:400px;          /* 프로필+사진 하단에 걸침 */
+
+    width:250px;
+
+    transform:rotate(1deg);
+
+    z-index:10;         /* 제일 위 */
 }
