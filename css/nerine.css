@@ -644,7 +644,8 @@
 /* 직접 그린 종이 PNG 적용 */
 /* ========================================= */
 
-.paper {
+/* 종이 PNG를 쓰는 박스에만 적용 */
+.paper-img {
   position: relative;
   overflow: visible;
 
@@ -652,7 +653,6 @@
   border: none;
   box-shadow: none;
 }
-
 .paper-decoration {
   position: absolute;
   inset: 0;
