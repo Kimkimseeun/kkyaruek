@@ -729,3 +729,62 @@
   z-index: 6 !important;
   transform: rotate(1deg) !important;
 }
+
+/* ========================================= */
+/* HERO 배치 수정 */
+/* 타이틀 아래로 / 네리네 반대 방향 회전 / 현상금 사진 위로 */
+/* ========================================= */
+
+/* NERINE 타이틀 영역 아래로 내리기 */
+.nerine-title-area {
+  margin-top: 44px;
+  margin-bottom: 90px;
+}
+
+/* HERO 전체 높이 */
+.nerine-hero {
+  min-height: 610px;
+}
+
+/* 프로필 종이: 왼쪽, 살짝 왼쪽으로 회전 */
+.profile-note {
+  left: 12px;
+  top: 90px;
+
+  transform: rotate(-4deg);
+}
+
+/* 네리네 사진: 오른쪽, 프로필과 반대 방향으로 회전 */
+.character-stand {
+  left: 250px;
+  top: 145px;
+
+  width: 330px;
+  height: 430px;
+
+  transform: rotate(5deg);
+  z-index: 3;
+}
+
+/* 네리네 이미지 위치 */
+.character-stand img {
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* 현상금 종이: 사진 위에 더 오밀조밀하게 얹기 */
+.bounty-slip {
+  left: 205px;
+  top: 470px;
+
+  width: 295px;
+  min-height: 92px;
+
+  transform: rotate(-1deg);
+  z-index: 7;
+}
+
+/* 현상금 안쪽 글자 */
+.bounty-slip .paper-content {
+  padding: 26px 30px;
+}
