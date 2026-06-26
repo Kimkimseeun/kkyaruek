@@ -24,8 +24,8 @@
 /* ========================================= */
 
 .nerine-title-area {
-  margin-top: 28px;
-  margin-bottom: 18px;
+  margin-top: 30px;
+  margin-bottom: 26px;
 }
 
 .small-label {
@@ -59,29 +59,32 @@
 .nerine-hero {
   position: relative;
   width: 100%;
-  height: 560px;
-  margin: 0 auto 70px;
+  height: 590px;
+  margin: 0 auto 78px;
+  overflow: visible;
 }
 
 /* 프로필 표 */
 .profile-note {
-  position: absolute;
-  left: 4px;
-  top: 54px;
-  width: 188px;
-  min-height: 390px;
-  transform: rotate(-4deg);
+  left: -8px;
+  top: 92px;
+
+  width: 195px;
+  min-height: 410px;
+
+  transform: rotate(-3deg);
   z-index: 6;
 }
 
 /* 네리네 사진: 프로필보다 뒤 */
 .character-stand {
-  position: absolute;
-  left: 148px;
-  top: 30px;
-  width: 260px;
-  height: 430px;
-  transform: rotate(3deg);
+  left: 150px;
+  top: 54px;
+
+  width: 248px;
+  height: 438px;
+
+  transform: rotate(1.5deg);
   overflow: hidden;
   z-index: 2;
 }
@@ -89,20 +92,25 @@
 .character-stand img {
   width: 100%;
   height: 100%;
+
   object-fit: cover;
   object-position: center top;
-  display: block;
 }
 
 /* 현상금 종이: 가운데 걸침 */
 .bounty-slip {
-  position: absolute;
   left: 88px;
-  top: 390px;
-  width: 310px;
-  min-height: 105px;
-  transform: rotate(1deg);
+  top: 438px;
+
+  width: 292px;
+  min-height: 100px;
+
+  transform: rotate(0.8deg);
   z-index: 8;
+}
+
+.bounty-slip .paper-content {
+  padding: 32px 36px;
 }
 
 
