@@ -8,28 +8,24 @@
   font-family: Georgia, "Times New Roman", serif;
 }
 
-
-/* 모바일 기준 페이지 폭 */
-
 .nerine-page {
   width: 100%;
   max-width: 430px;
   min-height: 100vh;
-
   margin: 0 auto;
   padding: 18px 20px 90px;
-
   background: #e8ddc6;
+  overflow-x: hidden;
 }
 
 
 /* ========================================= */
-/* 01. 타이틀 영역 */
+/* 01. 타이틀 */
 /* ========================================= */
 
 .nerine-title-area {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 28px;
+  margin-bottom: 18px;
 }
 
 .small-label {
@@ -40,14 +36,11 @@
 
 .nerine-logo {
   margin: 0;
-
   font-size: 42px;
   line-height: 0.9;
   letter-spacing: -0.06em;
-
   transform: rotate(-5deg);
   transform-origin: left center;
-
   text-decoration: underline;
   text-decoration-thickness: 2px;
 }
@@ -60,35 +53,61 @@
 
 
 /* ========================================= */
-/* 02. 메인 캐릭터 영역 */
+/* 02. 메인 Hero */
 /* ========================================= */
 
+.nerine-hero {
+  position: relative;
+  width: 100%;
+  height: 560px;
+  margin: 0 auto 70px;
+}
 
-/* 나침반 장식 자리 */
-
-.compass-mark {
+/* 프로필 표 */
+.profile-note {
   position: absolute;
-  left: 18px;
-  top: 255px;
+  left: 4px;
+  top: 54px;
+  width: 188px;
+  min-height: 390px;
+  transform: rotate(-4deg);
+  z-index: 6;
+}
 
-  width: 58px;
-  height: 58px;
+/* 네리네 사진: 프로필보다 뒤 */
+.character-stand {
+  position: absolute;
+  left: 148px;
+  top: 30px;
+  width: 260px;
+  height: 430px;
+  transform: rotate(3deg);
+  overflow: hidden;
+  z-index: 2;
+}
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.character-stand img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
 
-  border: 2px solid #25251b;
-  border-radius: 50%;
-
-  font-size: 28px;
-
-  transform: rotate(-18deg);
+/* 현상금 종이: 가운데 걸침 */
+.bounty-slip {
+  position: absolute;
+  left: 88px;
+  top: 390px;
+  width: 310px;
+  min-height: 105px;
+  transform: rotate(1deg);
+  z-index: 8;
 }
 
 
 /* ========================================= */
-/* 공통 종이 스타일 */
+/* 종이 PNG 적용 */
 /* ========================================= */
 
 .paper {
@@ -97,95 +116,124 @@
   box-shadow: 3px 3px 0 rgba(37, 37, 27, 0.18);
 }
 
+.paper-img {
+  position: relative;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.paper-decoration {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.paper-content {
+  position: relative;
+  z-index: 1;
+  padding: 24px 18px;
+}
+
+.bounty-slip .paper-content {
+  padding: 32px 38px;
+  font-size: 13px;
+}
+
+
+/* ========================================= */
+/* 프로필 내용 */
+/* ========================================= */
+
+.profile-note h2 {
+  margin: 0 0 12px;
+  font-size: 15px;
+}
+
+.profile-list {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.38;
+}
+
+.profile-list div {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.profile-list dt {
+  font-weight: bold;
+}
+
+.profile-list dd {
+  margin: 0;
+}
+
 
 /* ========================================= */
 /* 공통 섹션 */
-/* 소개 / 설정 / 관계 / 갤러리 / 기타 */
 /* ========================================= */
 
 .page-section {
   position: relative;
-
   margin: 58px 0;
 }
 
-
-/* 제목 스티커 */
-
 .section-label {
   display: inline-block;
-
   margin: 0 0 12px;
   padding: 4px 12px;
-
   background: #f3ead7;
   border: 1px dashed #25251b;
-
   font-size: 14px;
   font-weight: normal;
-
   transform: rotate(-2deg);
 }
-
-
-/* 검은 이미지 박스 */
 
 .dark-photo-box {
   width: 100%;
   height: 130px;
-
   background: #292918;
   border: 1px solid #1c1c12;
 }
 
-
-/* 본문 */
-
 .page-section p {
   margin: 12px 0 0;
-
   font-size: 12px;
   line-height: 1.8;
+  white-space: pre-line;
 }
 
 
 /* ========================================= */
-/* 소개 */
-/* ========================================= */
-
-.intro-section {
-  margin-top: 20px;
-}
-
-
-/* ========================================= */
-/* 설정 문서 */
+/* 큰 문서 */
 /* ========================================= */
 
 .dashed-document {
   min-height: 190px;
   padding: 18px;
-
   background: #efe4cc;
   border: 1px dashed #25251b;
-
   transform: rotate(-1deg);
 }
 
 
 /* ========================================= */
 /* 인간관계 */
-/* 사진 + 설명 형태 */
 /* ========================================= */
 
 .relation-card {
   display: grid;
   grid-template-columns: 88px 1fr;
   gap: 14px;
-
   margin-bottom: 22px;
   padding: 14px;
-
   background: #f0e6d0;
   transform: rotate(-1deg);
 }
@@ -201,23 +249,18 @@
 
 .relation-photo {
   min-height: 120px;
-
   border: 1px solid #25251b;
   background: rgba(255, 255, 255, 0.35);
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-size: 10px;
 }
 
 .relation-text h3 {
   display: inline-block;
-
   margin: 0 0 8px;
   padding: 3px 10px;
-
   background: #d6c6a5;
   font-size: 14px;
   font-weight: normal;
@@ -225,111 +268,14 @@
 
 .relation-text p {
   margin: 0;
-
   font-size: 12px;
   line-height: 1.7;
+  white-space: pre-line;
 }
 
-
-
-/* ========================================= */
-/* 갤러리 */
-/* ========================================= */
-
-.gallery-section .dark-photo-box {
-  height: 150px;
-}
-
-
-/* ========================================= */
-/* 항해일지 / 편지지 */
-/* ========================================= */
-
-.letter-paper {
-  position: relative;
-
-  min-height: 250px;
-  padding: 24px 20px;
-
-  background: #f0e6d0;
-  border: 1px dashed #25251b;
-
-  transform: rotate(-1.5deg);
-}
-
-
-/* 편지지 줄 */
-
-.letter-line {
-  height: 1px;
-  margin-bottom: 18px;
-
-  background: repeating-linear-gradient(
-    to right,
-    #25251b 0,
-    #25251b 8px,
-    transparent 8px,
-    transparent 13px
-  );
-}
-
-.letter-line.short {
-  width: 65%;
-}
-
-
-/* 편지지 안 작은 사진 */
-
-.mini-photo {
-  position: absolute;
-  right: 22px;
-  bottom: 28px;
-
-  width: 88px;
-  height: 100px;
-
-  border: 1px dashed #25251b;
-  background: rgba(255, 255, 255, 0.4);
-
-  transform: rotate(4deg);
-}
-
-
-/* ========================================= */
-/* 기타 */
-/* ========================================= */
-
-.small-items {
-  margin-top: 20px;
-
-  display: flex;
-  align-items: flex-end;
-  gap: 14px;
-}
-
-.small-items span {
-  display: block;
-
-  width: 50px;
-  height: 14px;
-
-  background: #b6a37f;
-  border: 1px solid #25251b;
-
-  border-radius: 50%;
-}
-
-.small-items div {
-  width: 92px;
-  height: 80px;
-
-  background: #b6a37f;
-  border: 1px solid #25251b;
-}
 
 /* ========================================= */
 /* 항해일지 */
-/* 앞으로 article 복붙으로 계속 추가 가능 */
 /* ========================================= */
 
 .logbook-list {
@@ -340,7 +286,6 @@
 
 .logbook-card {
   padding: 16px;
-
   background: #f0e6d0;
   transform: rotate(-1deg);
 }
@@ -351,10 +296,8 @@
 
 .logbook-card h3 {
   display: inline-block;
-
   margin: 0 0 12px;
   padding: 4px 12px;
-
   background: #d6c6a5;
   font-size: 15px;
   font-weight: normal;
@@ -363,42 +306,54 @@
 .logbook-image {
   height: 135px;
   margin-bottom: 12px;
-
   background: #292918;
   border: 1px solid #1c1c12;
 }
 
 .logbook-card p {
   margin: 0;
-
   font-size: 12px;
   line-height: 1.8;
+  white-space: pre-line;
 }
 
-/* 각주 팝업 */
+
+/* ========================================= */
+/* 각주 */
+/* ========================================= */
 
 .footnote {
   position: relative;
+  display: inline-block;
   cursor: pointer;
-  border-bottom: 1px dotted #25251b;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.footnote-number,
+.footnote sup {
+  vertical-align: super;
+  font-size: 0.65em;
+  line-height: 0;
+  text-decoration: none;
 }
 
 .footnote-popup {
   display: none;
-  position: absolute;
-  left: 0;
-  bottom: 130%;
-  z-index: 1000;
-
-  width: 220px;
+  position: fixed;
+  left: 24px;
+  right: 24px;
+  bottom: 80px;
+  width: auto;
+  max-width: 380px;
+  margin: 0 auto;
   padding: 12px;
-
   background: #f3ead7;
   border: 1px solid #25251b;
   box-shadow: 3px 3px 0 rgba(37, 37, 27, 0.2);
-
   font-size: 12px;
   line-height: 1.6;
+  z-index: 9999;
 }
 
 .footnote:hover .footnote-popup,
@@ -408,668 +363,32 @@
 
 
 /* ========================================= */
-/* 수정: 줄바꿈 적용 */
-/* HTML에서 줄바꿈한 그대로 화면에 보이게 함 */
+/* 기타 */
 /* ========================================= */
 
-.page-section p,
-.logbook-card p,
-.relation-text p {
-  white-space: pre-line;
-}
-
-
-/* ========================================= */
-/* 수정: 각주 */
-/* 윗첨자 + 밑줄 제거 */
-/* ========================================= */
-
-.footnote {
-  position: relative;
-  cursor: pointer;
-  border-bottom: none;
-  text-decoration: none;
-}
-
-.footnote-number {
-  vertical-align: super;
-  font-size: 0.7em;
-  line-height: 0;
-}
-
-/* ========================================= */
-/* 프로필 리스트 */
-/* ========================================= */
-
-.profile-list {
-  margin: 0;
-  font-size: 14px;
-  line-height: 1.6;
-}
-
-.profile-list div {
-  display: grid;
-  grid-template-columns: 62px 1fr;
-  gap: 6px;
-}
-
-.profile-list dt {
-  font-weight: bold;
-}
-
-.profile-list dd {
-  margin: 0;
-}
-
-/* ========================================= */
-/* 수정: 각주 */
-/* 공백제거 */
-/* ========================================= */
-
-.footnote {
-  position: relative;
-  display: inline;
-  cursor: pointer;
-}
-
-.footnote sup {
-  font-size: 0.65em;
-  vertical-align: super;
-  line-height: 0;
-  text-decoration: none;
-}
-
-/* ========================================= */
-/* 수정: 각주 팝업이 화면 밖으로 나가지 않게 */
-/* ========================================= */
-
-.footnote {
-  position: relative;
-  display: inline-block;
-}
-
-.footnote-popup {
-  position: fixed;
-  left: 24px;
-  right: 24px;
-  bottom: 80px;
-
-  width: auto;
-  max-width: 380px;
-  margin: 0 auto;
-
-  z-index: 9999;
-}
-
-
-/* ========================================= */
-/* 수정: 프로필 글자 크기 축소 */
-/* ========================================= */
-
-.profile-note {
-  width: 165px;
-  font-size: 12px;
-  line-height: 1.45;
-}
-
-.profile-note h2 {
-  font-size: 15px;
-}
-
-.profile-list {
-  font-size: 12px;
-  line-height: 1.45;
-}
-
-.profile-list div {
-  grid-template-columns: 54px 1fr;
-  gap: 4px;
-}
-
-
-/* ========================================= */
-/* 직접 그린 종이 PNG 적용 */
-/* ========================================= */
-
-/* 종이 PNG를 쓰는 박스에만 적용 */
-.paper-img {
-  position: relative;
-  overflow: visible;
-
-  background: transparent;
-  border: none;
-  box-shadow: none;
-}
-.paper-decoration {
-  position: absolute;
-  inset: 0;
-
-  width: 100%;
-  height: 100%;
-
-  object-fit: fill;
-  pointer-events: none;
-
-  z-index: 0;
-}
-
-.paper-content {
-  position: relative;
-  z-index: 1;
-
-  padding: 22px;
-}
-
-
-/* 작은 종이: PROFILE, BOUNTY RECORD */
-
-.paper-small {
-  width: 185px;
-  min-height: 360px;
-}
-
-
-/* 프로필 글자 조정 */
-
-.profile-note {
-  width: 185px;
-  min-height: 360px;
-  font-size: 11px;
-}
-
-.profile-note h2 {
-  margin: 0 0 12px;
-  font-size: 16px;
-}
-
-.profile-list {
-  margin: 0;
-  font-size: 11px;
-  line-height: 1.45;
-}
-
-.profile-list div {
-  display: grid;
-  grid-template-columns: 58px 1fr;
-  gap: 5px;
-
-  margin-bottom: 4px;
-}
-
-.profile-list dt {
-  font-weight: bold;
-}
-
-.profile-list dd {
-  margin: 0;
-}
-
-
-/* 현상금 종이는 프로필을 너무 가리지 않게 아래로 */
-
-.bounty-slip {
-  top: 410px;
-  width: 250px;
-  min-height: 95px;
-}
-
-
-/* 네리네 이미지 크게 */
-
-.character-stand {
-  position: absolute;
-  left: 330px;
-  top: 90px;
-  width: 320px;
-  height: 470px;
-  overflow: hidden;
-  transform: rotate(-2deg);
-  z-index: 3;
-}
-
-.character-stand img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center top;
-}
-
-
-/* 프로필 내용 */
-.profile-note .paper-content {
-  padding: 22px 18px;
-}
-
-.profile-note h2 {
-  margin: 0 0 10px;
-  font-size: 14px;
-}
-
-.profile-list {
-  margin: 0;
-  font-size: 10px;
-  line-height: 1.35;
-}
-
-.profile-list div {
-  display: grid;
-  grid-template-columns: 48px 1fr;
-  gap: 4px;
-  margin-bottom: 4px;
-}
-
-.profile-list dt {
-  font-weight: bold;
-}
-
-.profile-list dd {
-  margin: 0;
-}
-
-/* ========================================= */
-/* HERO 강제 재배치 */
-/* 프로필 왼쪽 / 네리네 오른쪽 / 현상금 아래 */
-/* ========================================= */
-
-.nerine-hero{
-    position:relative;
-    width:100%;
-    max-width:760px;
-    min-height:620px;
-    margin:40px auto 80px;
-}
-
-/* 프로필을 왼쪽 위로 빼기 */
-.profile-note {
-  position: absolute !important;
-  left: 0 !important;
-  top: 120px !important;
-
-  width: 170px !important;
-  min-height: 350px !important;
-
-  z-index: 5 !important;
-  transform: rotate(-4deg) !important;
-}
-
-
-/* 네리네 이미지 */
-.character-stand img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center top !important;
-}
-
-/* 현상금 종이 */
-.bounty-slip {
-  position: absolute !important;
-  left: 125px !important;
-  top: 465px !important;
-
-  width: 260px !important;
-  min-height: 95px !important;
-
-  z-index: 6 !important;
-  transform: rotate(1deg) !important;
-}
-
-/* ========================================= */
-/* HERO 배치 수정 */
-/* 타이틀 아래로 / 네리네 반대 방향 회전 / 현상금 사진 위로 */
-/* ========================================= */
-
-/* NERINE 타이틀 영역 아래로 내리기 */
-.nerine-title-area {
-  margin-top: 44px;
-  margin-bottom: 90px;
-}
-
-/* HERO 전체 높이 */
-.nerine-hero {
-  min-height: 610px;
-}
-
-/* 프로필 종이: 왼쪽, 살짝 왼쪽으로 회전 */
-.profile-note {
-  left: 12px;
-  top: 90px;
-
-  transform: rotate(-4deg);
-}
-
-/* 네리네 사진: 오른쪽, 프로필과 반대 방향으로 회전 */
-.character-stand {
-  left: 250px;
-  top: 145px;
-
-  width: 330px;
-  height: 430px;
-
-  transform: rotate(5deg);
-  z-index: 3;
-}
-
-/* 네리네 이미지 위치 */
-.character-stand img {
-  object-fit: cover;
-  object-position: center top;
-}
-
-/* 현상금 종이: 사진 위에 더 오밀조밀하게 얹기 */
-.bounty-slip {
-  left: 205px;
-  top: 470px;
-
-  width: 295px;
-  min-height: 92px;
-
-  transform: rotate(-1deg);
-  z-index: 7;
-}
-
-/* 현상금 안쪽 글자 */
-.bounty-slip .paper-content {
-  padding: 26px 30px;
-}
-
-/* ========================================= */
-/* HERO 모바일 최종 배치 */
-/* 오른쪽 예시처럼: 프로필 왼쪽 / 네리네 오른쪽 / 현상금 아래 */
-/* ========================================= */
-
-.nerine-page {
-  max-width: 430px !important;
-  margin: 0 auto !important;
-}
-
-.nerine-hero {
-  position: relative !important;
-  width: 100% !important;
-  min-height: 610px !important;
-  margin: 34px auto 86px !important;
-  overflow: visible !important;
-}
-
-/* 프로필 표: 화면 안에서 절대 안 잘리게 */
-.profile-note {
-  position: absolute !important;
-  left: 12px !important;
-  top: 110px !important;
-
-  width: 185px !important;
-  min-height: 390px !important;
-
-  transform: rotate(-4deg) !important;
-  z-index: 6 !important;
-}
-
-/* 프로필 내용 */
-.profile-note .paper-content {
-  padding: 24px 18px !important;
-}
-
-.profile-note h2 {
-  margin: 0 0 12px !important;
-  font-size: 15px !important;
-}
-
-.profile-list {
-  font-size: 11px !important;
-  line-height: 1.38 !important;
-}
-
-.profile-list div {
-  display: grid !important;
-  grid-template-columns: 58px 1fr !important;
-  gap: 5px !important;
-  margin-bottom: 5px !important;
-}
-
-/* 네리네 사진: 오른쪽, 화면 안에 들어오게 */
-.character-stand {
-  position: absolute !important;
-  left: 165px !important;
-  top: 80px !important;
-
-  width: 245px !important;
-  height: 430px !important;
-
-  overflow: hidden !important;
-  transform: rotate(1.5deg) !important;
-  z-index: 4 !important;
-}
-
-/* 사진 자체는 박스 안에서 크게 */
-.character-stand img {
-  width: 112% !important;
-  height: 112% !important;
-
-  object-fit: cover !important;
-  object-position: center top !important;
-}
-
-/* 현상금 종이: 두 요소 위에 자연스럽게 겹치기 */
-.bounty-slip {
-  position: absolute !important;
-  left: 112px !important;
-  top: 440px !important;
-
-  width: 285px !important;
-  min-height: 100px !important;
-
-  transform: rotate(1deg) !important;
-  z-index: 8 !important;
-}
-
-.bounty-slip .paper-content {
-  padding: 30px 34px !important;
-  font-size: 13px !important;
-}
-
-/* ========================================= */
-/* HERO 배치 수정 2 */
-/* 타이틀 가까이 / 프로필 위 / 네리네 크게 / 현상금 중앙 */
-/* ========================================= */
-
-/* 타이틀 아래 여백 줄이기 */
-.nerine-title-area {
-  margin-top: 28px !important;
-  margin-bottom: 28px !important;
-}
-
-/* hero 자체를 위로 붙이고 높이 확보 */
-.nerine-hero {
-  position: relative !important;
-  width: 100% !important;
-  min-height: 590px !important;
-  margin: 0 auto 80px !important;
-  overflow: visible !important;
-}
-
-/* 프로필: 더 위로 */
-.profile-note {
-  left: 10px !important;
-  top: 40px !important;
-
-  width: 185px !important;
-  min-height: 390px !important;
-
-  transform: rotate(-4deg) !important;
-  z-index: 6 !important;
-}
-
-/* 네리네 사진 박스: 더 크고 오른쪽 */
-.character-stand {
-  left: 160px !important;
-  top: 70px !important;
-
-  width: 270px !important;
-  height: 460px !important;
-
-  transform: rotate(1.5deg) !important;
-  overflow: hidden !important;
-  z-index: 4 !important;
-}
-
-/* 네리네 이미지 안쪽 확대 */
-.character-stand img {
-  width: 118% !important;
-  height: 118% !important;
-
-  object-fit: cover !important;
-  object-position: center top !important;
-}
-
-/* 현상금: 사이트 중앙 쪽으로 */
-.bounty-slip {
-  left: 86px !important;
-  top: 445px !important;
-
-  width: 310px !important;
-  min-height: 100px !important;
-
-  transform: rotate(1deg) !important;
-  z-index: 8 !important;
-}
-
-.bounty-slip .paper-content {
-  padding: 30px 38px !important;
-}
-
-/* ========================================= */
-/* HERO 배치 수정 3 */
-/* 네리네: 잘리지 않게 / 맨 뒤 / 프로필보다 위 / 반대 각도 */
-/* ========================================= */
-
-.nerine-hero {
-  position: relative !important;
-  width: 100% !important;
-  max-width: 430px !important;
-  min-height: 610px !important;
-  margin: 0 auto 80px !important;
-  overflow: visible !important;
-}
-
-/* 프로필 표 */
-.profile-note {
-  left: 12px !important;
-  top: 82px !important;
-
-  width: 185px !important;
-  min-height: 390px !important;
-
-  transform: rotate(-4deg) !important;
-  z-index: 6 !important;
-}
-
-/* 네리네 사진 박스 */
-.character-stand {
-  left: 150px !important;
-  top: 42px !important;
-
-  width: 255px !important;
-  height: 455px !important;
-
-  transform: rotate(3deg) !important;
-  overflow: visible !important;
-
-  z-index: 2 !important;
-}
-
-/* 네리네 이미지 자체 */
-.character-stand img {
-  width: 100% !important;
-  height: 100% !important;
-
-  object-fit: contain !important;
-  object-position: center top !important;
-
-  display: block !important;
-}
-
-/* 현상금 종이 */
-.bounty-slip {
-  left: 96px !important;
-  top: 430px !important;
-
-  width: 300px !important;
-  min-height: 100px !important;
-
-  transform: rotate(1deg) !important;
-  z-index: 8 !important;
-}
-
-/* ========================= */
-/* 모바일 Hero 최종 배치 */
-/* ========================= */
-
-.nerine-hero{
-    position:relative;
-    width:100%;
-    max-width:430px;
-    height:620px;
-    margin:20px auto 60px;
-    overflow:hidden;   /* 네리네가 페이지 밖으로 안 튀어나감 */
-}
-
-
-/* 제목 */
-.nerine-title{
-    margin-top:20px !important;
-    margin-bottom:8px !important;
-}
-
-
-/* 프로필 */
-.profile-note{
-    position:absolute;
-    left:10px;
-    top:85px;
-
-    width:185px;
-
-    transform:rotate(-4deg);
-
-    z-index:5;
-}
-
-
-/* 네리네 사진 */
-.character-stand{
-    position:absolute;
-
-    left:150px;
-    top:40px;
-
-    width:250px;
-    height:430px;
-
-    transform:rotate(5deg);
-
-    overflow:visible;
-
-    z-index:1;          /* ← 프로필보다 뒤 */
-}
-
-.character-stand img{
-    width:100%;
-    height:100%;
-
-    object-fit:contain;
-}
-
-
-/* 현상금 */
-.bounty-slip{
-    position:absolute;
-
-    left:95px;          /* 거의 가운데 */
-    top:400px;          /* 프로필+사진 하단에 걸침 */
-
-    width:250px;
-
-    transform:rotate(1deg);
-
-    z-index:10;         /* 제일 위 */
+.gallery-section .dark-photo-box {
+  height: 150px;
+}
+
+.small-items {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+}
+
+.small-items span {
+  display: block;
+  width: 50px;
+  height: 14px;
+  background: #b6a37f;
+  border: 1px solid #25251b;
+  border-radius: 50%;
+}
+
+.small-items div {
+  width: 92px;
+  height: 80px;
+  background: #b6a37f;
+  border: 1px solid #25251b;
 }
