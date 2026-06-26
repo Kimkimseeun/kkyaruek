@@ -64,17 +64,17 @@
 .profile-note {
   position: absolute;
   left: 18px;
-  top: 118px;
+  top: 90px;
 
   width: 180px;
-  min-height: 395px;
+  min-height: 390px;
   padding: 24px 18px;
 
   background: #d6c6a5;
   border: 1px solid rgba(37, 37, 27, 0.65);
   box-shadow: 4px 4px 0 rgba(37, 37, 27, 0.18);
 
-  transform: rotate(-2deg);
+  transform: rotate(-1.8deg);
   /* -3~-4 말고 -2 */
   z-index: 5;
 }
@@ -109,7 +109,7 @@
 .character-stand {
   position: absolute;
   right: 14px;
-  top:450px;
+  top:88px;
 
   width: 245px;
   height: 405px;
@@ -135,7 +135,7 @@
 .bounty-slip {
   position: absolute;
   left: 118px;
-  top: 432px;
+  top: 425px;
 
   width: 245px;
   min-height: 82px;
@@ -146,7 +146,7 @@
   box-shadow: 4px 4px 0 rgba(37, 37, 27, 0.18);
 
   transform: rotate(1deg);   /* 거의 안 기울임 */
-  z-index:7;
+  z-index:8;
 
   font-size: 15px;
 }
